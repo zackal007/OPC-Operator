@@ -100,7 +100,7 @@ python_bin() {
 cmd_detekt() {
   step "detekt（静态规则）"
   local modules=()
-  for m in :kit :kit-agent-koog :kit-membership :chat-demo; do
+  for m in :kit :kit-agent-koog :kit-membership :chat-demo :opc-core :opc-desktop; do
     have_module "${m#:}" && modules+=("$m")
   done
   while read -r m; do [ -n "$m" ] && modules+=("$m"); done < <(app_modules)
@@ -166,7 +166,7 @@ cmd_verify() {
 cmd_test() {
   step "单元测试"
   local modules=()
-  for m in :kit :kit-agent-koog :kit-membership :chat-demo; do
+  for m in :kit :kit-agent-koog :kit-membership :chat-demo :opc-core :opc-desktop; do
     have_module "${m#:}" && modules+=("$m")
   done
   while read -r m; do [ -n "$m" ] && modules+=("$m"); done < <(app_modules)
@@ -214,9 +214,11 @@ cmd_build_android() {
 cmd_build_desktop() {
   step "构建桌面目标"
   local targets=()
-  for m in :kit :kit-agent-koog :kit-membership; do
+  for m in :kit :kit-agent-koog :kit-membership :opc-core; do
     have_module "${m#:}" && targets+=("${m}:compileKotlinDesktop")
   done
+  # 纯 JVM 的桌面壳（kotlin.jvm，没有 desktop 目标）
+  have_module "opc-desktop" && targets+=(":opc-desktop:compileKotlin")
   [ ${#targets[@]} -eq 0 ] && { ok "没有桌面模块"; return; }
 
   if ./gradlew "${targets[@]}" $GRADLE_FLAGS; then ok "桌面构建"; else bad "桌面构建"; fi

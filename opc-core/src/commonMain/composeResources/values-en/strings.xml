@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tabs -->
+    <string name="opc_tab_dashboard">Console</string>
+    <string name="opc_tab_media">Media</string>
+    <string name="opc_tab_projects">Projects</string>
+    <string name="opc_tab_goals">Goals</string>
+    <string name="opc_tab_assistant">Assistant</string>
+
+    <!-- Common -->
+    <string name="opc_title">OPC Console</string>
+    <string name="opc_settings">Settings</string>
+    <string name="opc_settings_title">Console settings</string>
+    <string name="opc_github_token_label">GitHub token</string>
+    <string name="opc_repos">Tracked repos (comma separated, owner/repo)</string>
+    <string name="opc_media_sync_repo">Media snapshot repo (owner/repo)</string>
+    <string name="opc_settings_hint">The token stays on this device and is never uploaded. Leave repos empty to sync every repo of the account.</string>
+    <string name="opc_back">Back</string>
+    <string name="opc_save">Save</string>
+    <string name="opc_saved">Saved</string>
+    <string name="opc_cancel">Cancel</string>
+    <string name="opc_delete">Delete</string>
+    <string name="opc_confirm">OK</string>
+    <string name="opc_no_data">No data yet</string>
+
+    <!-- Dashboard -->
+    <string name="opc_dashboard_today">Today</string>
+    <string name="opc_stat_followers">Followers</string>
+    <string name="opc_stat_commits">Commits / week</string>
+    <string name="opc_stat_goals">Goal progress</string>
+    <string name="opc_section_media">Media</string>
+    <string name="opc_section_projects">Projects</string>
+    <string name="opc_section_goals">Goals</string>
+    <string name="opc_recent_commits">Recent commits</string>
+    <string name="opc_active_goals">Active goals</string>
+    <string name="opc_sync_now">Sync now</string>
+    <string name="opc_syncing">Syncing…</string>
+    <string name="opc_never_synced">Never synced</string>
+    <string name="opc_sync_failed">Last sync failed</string>
+    <string name="opc_last_sync_at">Last sync</string>
+    <string name="opc_week">This week</string>
+
+    <!-- Media -->
+    <string name="opc_add_account">Add account</string>
+    <string name="opc_add_metric">Log metrics</string>
+    <string name="opc_add_content">Add content</string>
+    <string name="opc_platform">Platform</string>
+    <string name="opc_account_name">Account name</string>
+    <string name="opc_handle">Account id</string>
+    <string name="opc_date">Date</string>
+    <string name="opc_followers">Followers</string>
+    <string name="opc_views">Views</string>
+    <string name="opc_interactions">Interactions</string>
+    <string name="opc_new_followers">New followers</string>
+    <string name="opc_revenue">Revenue</string>
+    <string name="opc_content_title">Content title</string>
+    <string name="opc_content_plan">Content plan</string>
+    <string name="opc_published">Published</string>
+    <string name="opc_planned">Planned</string>
+    <string name="opc_empty_media_title">No media account yet</string>
+    <string name="opc_empty_media_sub">Add an account and log metrics, or let the collector script sync them</string>
+    <string name="opc_all_accounts">All accounts</string>
+
+    <!-- Projects -->
+    <string name="opc_stars">Stars</string>
+    <string name="opc_open_prs">Open PRs</string>
+    <string name="opc_open_issues">Open issues</string>
+    <string name="opc_commits_count">Commits</string>
+    <string name="opc_sort_recent">Recent push</string>
+    <string name="opc_sort_commits">Commits</string>
+    <string name="opc_sort_stars">Stars</string>
+    <string name="opc_empty_projects_title">No projects yet</string>
+    <string name="opc_empty_projects_sub">Add a GitHub token in settings, then sync</string>
+
+    <!-- Goals -->
+    <string name="opc_add_goal">New goal</string>
+    <string name="opc_edit_goal">Edit goal</string>
+    <string name="opc_update_progress">Update progress</string>
+    <string name="opc_goal_title">Goal title</string>
+    <string name="opc_period">Period</string>
+    <string name="opc_owner">Owner</string>
+    <string name="opc_kr_title">Key result</string>
+    <string name="opc_add_kr">Add key result</string>
+    <string name="opc_unit">Unit</string>
+    <string name="opc_target_value">Target</string>
+    <string name="opc_current_value">Current</string>
+    <string name="opc_empty_goals_title">No goal in this period</string>
+    <string name="opc_empty_goals_sub">Create a goal and split it into key results</string>
+
+    <!-- Assistant -->
+    <string name="opc_ask_placeholder">How did I do this week?</string>
+    <string name="opc_send">Send</string>
+    <string name="opc_no_api_key">No API key: build with -PanthropicApiKey=xxx (or set ANTHROPIC_API_KEY)</string>
+</resources>

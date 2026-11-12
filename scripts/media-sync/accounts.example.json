@@ -1,0 +1,16 @@
+{
+  "accounts": [
+    {
+      "platform": "wechat_mp",
+      "handle": "zackal",
+      "name": "某公众号",
+      "source": "data/wechat_mp.json"
+    },
+    {
+      "platform": "bilibili",
+      "handle": "zackal",
+      "name": "某UP主",
+      "source": "data/bilibili.json"
+    }
+  ]
+}

@@ -9,12 +9,12 @@ import java.io.File
  * app 壳的自检 —— 模板生成的东西别自己跟自己打架。
  *
  * 照抄这个文件写你自己的测试；fork 的第一个 PR 就该有单测。
- * （CI 的 unit-test job 会自动跑 apps/* 的 testDebugUnitTest，不用改 workflow。）
+ * （CI 的 unit-test job 会自动跑 apps 目录下 app 的 testDebugUnitTest，不用改 workflow。）
  */
 class AppWiringTest {
 
     @Test
-    fun `app_name 在 strings.xml 里且非空`() {
+    fun `app_name 在 strings 文件里且非空`() {
         val strings = read("src/main/res/values/strings.xml")
         assertTrue("strings.xml 里没有 app_name", strings.contains("name=\"app_name\""))
         assertTrue("app_name 是空的", !strings.contains("<string name=\"app_name\"></string>"))

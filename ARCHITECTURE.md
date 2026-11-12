@@ -288,3 +288,18 @@ bash scripts/ci.sh all        # 提交前跑这个：detekt + api + verify + tes
 - **历史压缩 / 持久化**：`ChatMemory` 现在是内存 provider，app 退出即失忆；
   要跨进程留住对话就实现 `ChatHistoryProvider`（存文件/SQLite）。
 - **服务端 skill 下发**：SkillDefinition 目前随 app 打包；要做热更新再加一个拉配置的接口。
+
+## 个人公司操作台（`opc-core/` + `opc-desktop/` + `apps/opc/`）
+
+在这套底座上做的一个真实 app：自媒体运营、项目提交、目标达成三块。
+设计和分期见 [`docs/opc-console-design.md`](docs/opc-console-design.md)。
+
+| 模块 | 形态 | 内容 |
+|---|---|---|
+| `opc-core/` | KMP 库（android / desktop / ios） | 三个 store（自媒体 / 项目 / 目标）+ 五个页面 + `OpcSkill`（13 个工具） |
+| `opc-desktop/` | 桌面壳（compose desktop） | 开窗口；数据落在 `~/.opc-console` |
+| `apps/opc/` | Android 壳 | 只管 manifest / 主题 / 入口 Activity |
+| `scripts/media-sync/` | Python | 自媒体数据 → `media_snapshot.json` → push 到 GitHub；app 拉回本地 |
+
+它就是底座用法的一个完整例子：业务逻辑全在 data 层，页面和 agent 工具调同一批方法；
+危险工具（删账号 / 删目标）挂在 `ToolApprover` 上。

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 页签 -->
+    <string name="opc_tab_dashboard">操作台</string>
+    <string name="opc_tab_media">自媒体</string>
+    <string name="opc_tab_projects">项目</string>
+    <string name="opc_tab_goals">目标</string>
+    <string name="opc_tab_assistant">助手</string>
+
+    <!-- 通用 -->
+    <string name="opc_title">OPC 操作台</string>
+    <string name="opc_settings">设置</string>
+    <string name="opc_settings_title">操作台设置</string>
+    <string name="opc_github_token_label">GitHub token</string>
+    <string name="opc_repos">关注的仓库（逗号分隔，owner/repo）</string>
+    <string name="opc_media_sync_repo">自媒体快照仓库（owner/repo）</string>
+    <string name="opc_settings_hint">token 只存在这台设备上，不会上传。仓库留空 = 同步账号下的全部仓库。</string>
+    <string name="opc_back">返回</string>
+    <string name="opc_save">保存</string>
+    <string name="opc_saved">已保存</string>
+    <string name="opc_cancel">取消</string>
+    <string name="opc_delete">删除</string>
+    <string name="opc_confirm">确定</string>
+    <string name="opc_no_data">还没有数据</string>
+
+    <!-- 首页 -->
+    <string name="opc_dashboard_today">今天的操作台</string>
+    <string name="opc_stat_followers">粉丝</string>
+    <string name="opc_stat_commits">本周提交</string>
+    <string name="opc_stat_goals">目标完成度</string>
+    <string name="opc_section_media">自媒体</string>
+    <string name="opc_section_projects">项目</string>
+    <string name="opc_section_goals">目标</string>
+    <string name="opc_recent_commits">最近提交</string>
+    <string name="opc_active_goals">进行中的目标</string>
+    <string name="opc_sync_now">立即同步</string>
+    <string name="opc_syncing">同步中…</string>
+    <string name="opc_never_synced">从未同步</string>
+    <string name="opc_sync_failed">上次同步失败</string>
+    <string name="opc_last_sync_at">上次同步</string>
+    <string name="opc_week">本周</string>
+
+    <!-- 自媒体 -->
+    <string name="opc_add_account">添加账号</string>
+    <string name="opc_add_metric">记一条数据</string>
+    <string name="opc_add_content">加一条内容</string>
+    <string name="opc_platform">平台</string>
+    <string name="opc_account_name">账号名</string>
+    <string name="opc_handle">账号 ID</string>
+    <string name="opc_date">日期</string>
+    <string name="opc_followers">粉丝</string>
+    <string name="opc_views">曝光</string>
+    <string name="opc_interactions">互动</string>
+    <string name="opc_new_followers">涨粉</string>
+    <string name="opc_revenue">收入</string>
+    <string name="opc_content_title">内容标题</string>
+    <string name="opc_content_plan">内容计划</string>
+    <string name="opc_published">已发布</string>
+    <string name="opc_planned">待发布</string>
+    <string name="opc_empty_media_title">还没有自媒体账号</string>
+    <string name="opc_empty_media_sub">加一个账号手动记数据，或配置采集脚本自动同步</string>
+    <string name="opc_all_accounts">全部账号</string>
+
+    <!-- 项目 -->
+    <string name="opc_stars">星标</string>
+    <string name="opc_open_prs">未合 PR</string>
+    <string name="opc_open_issues">未关 issue</string>
+    <string name="opc_commits_count">提交</string>
+    <string name="opc_sort_recent">最近推送</string>
+    <string name="opc_sort_commits">提交数</string>
+    <string name="opc_sort_stars">星标</string>
+    <string name="opc_empty_projects_title">还没有项目</string>
+    <string name="opc_empty_projects_sub">在设置里填 GitHub token，然后同步一次</string>
+
+    <!-- 目标 -->
+    <string name="opc_add_goal">新建目标</string>
+    <string name="opc_edit_goal">编辑目标</string>
+    <string name="opc_update_progress">更新进度</string>
+    <string name="opc_goal_title">目标名</string>
+    <string name="opc_period">周期</string>
+    <string name="opc_owner">负责人</string>
+    <string name="opc_kr_title">关键结果</string>
+    <string name="opc_add_kr">加一个关键结果</string>
+    <string name="opc_unit">单位</string>
+    <string name="opc_target_value">目标值</string>
+    <string name="opc_current_value">当前值</string>
+    <string name="opc_empty_goals_title">这个周期还没有目标</string>
+    <string name="opc_empty_goals_sub">新建一个目标，拆成几个关键结果</string>
+
+    <!-- 助手 -->
+    <string name="opc_ask_placeholder">我这周做得怎么样？</string>
+    <string name="opc_send">发送</string>
+    <string name="opc_no_api_key">没配 API key：构建时传 -PanthropicApiKey=xxx（或设环境变量 ANTHROPIC_API_KEY）</string>
+</resources>

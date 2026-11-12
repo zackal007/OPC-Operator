@@ -43,7 +43,7 @@ def pairs():
                    os.path.join(kit, "values-en/strings.xml")))
 
     # 各可选模块（kit-agent-koog 没文案，kit-membership 有）
-    for mod in ("kit-membership",):
+    for mod in ("kit-membership", "opc-core"):
         res = os.path.join(ROOT, mod, "src/commonMain/composeResources")
         result.append((os.path.join(res, "values/strings.xml"),
                        os.path.join(res, "values-en/strings.xml")))

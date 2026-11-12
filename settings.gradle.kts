@@ -41,6 +41,10 @@ include(":kit")
 include(":kit-agent-koog")
 include(":kit-membership")
 include(":chat-demo")
+// OPC 操作台：业务库（三端同源）+ 桌面壳。
+// apps/ 下的目录由下面的规则自动 include，这两个在根上，要显式写。
+include(":opc-core")
+include(":opc-desktop")
 
 // apps/ 下每个带 build.gradle.kts 的目录自动成为模块（:apps:<目录名>）。
 // 本仓库是底座：各 app fork 本仓库后在 apps/<name>/ 里开发自己的壳，
